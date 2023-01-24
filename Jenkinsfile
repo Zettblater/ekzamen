@@ -7,8 +7,8 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 's', passwordVariable: 'password', usernameVariable: 'username')]) {
     
 
-              sh "docker build -t zettblater/sharks:v$BUILD_ID ."
-              sh "docker push zettblater/sharks:v$BUILD_ID"  }
+              sh "docker build -t zettblater/ekz:v$BUILD_ID ."
+              sh "docker push zettblater/ekz:v$BUILD_ID"  }
             }
         }
     }
