@@ -31,4 +31,4 @@
       name: server-container{{ BUILD_ID }}
       image: zettblater/ekz:v{{ BUILD_ID }}
       ports:
-        - "80:8000"
+        - "5333:8000"
