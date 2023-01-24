@@ -1,6 +1,9 @@
 pipeline {
     agent any
+ environment {
 
+    ANSIBLE_PRIVATE_KEY=credentials('ssh-key')
+}
     stages {
         stage('Build') {
             steps {
