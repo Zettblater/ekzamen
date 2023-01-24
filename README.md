@@ -7,4 +7,4 @@
 В вашем пайплайне должно быть 2 стейджа это build и deploy, и сделать trigger, чтобы при изменении кода ваше приложение автоматически пересобиралось. В стейдже build вы должны собрать приложение с помощью Dockerfile и запушить его в свой Docker registry на DockerHUB. В стейдже deploy должен запускаться playbook.yaml для запуска вашего приложения на сервера worker01 и worker02 И сделать отправку уведомлений в телеграм.
 
 Ссылки для быстрого поиска: https://www.jenkins.io/doc/book/pipeline/jenkinsfile/ https://docs.docker.com/engine/reference/builder/
-one gf
+one gf hfghfghfg
