@@ -27,7 +27,7 @@ pipeline {
     
 post {
      success { 
-        withCredentials([string(credentialsId: 'chatchat', variable: '5857110328:AAGZjKSrMeua8hd1b_iDlPJCQXeiafhsYbk'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
+        withCredentials([string(credentialsId: 'chatchat', variable: '5857f110328:AAGZjKSrMeua8hd1b_iDlPJCQXeiafhsYbk'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
         sh  ("""
             curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text='*${env.JOB_NAME}* : POC *Branch*: ${env.GIT_BRANCH} *Build* : OK *Published* = YES'
         """)
